@@ -18,7 +18,7 @@ router.post('/todos', async (req, res, next) => {
 
     const { value } = validation;
 
-    // 1-5. 만약, 클라이언트가 value 데이터를 전달하지 않았을 때, 클라이언트에게 에러 메세지를 전달한다.
+    // 1-5. 만약, 클라이언트가 value 데이터를 전달하지 않았을 때, 클라이언트에게 에러 메세지를 전달한다
     if (!value) {
       return res
         .status(400)
